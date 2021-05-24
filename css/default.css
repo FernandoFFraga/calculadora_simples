@@ -44,6 +44,7 @@ html, body{
 	display: block;
 }
 
+
 /*Configuração container*/
 
 .container{
@@ -57,6 +58,7 @@ html, body{
 
 #display{
 	background-color: #4F4F4F;
+	position: relative;
 }
 
 #display input{
@@ -72,6 +74,13 @@ html, body{
 
 #display input:focus{
 	outline: 0;
+}
+
+#operation{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #A5A5A5;
 }
 
 #keyboard table{
