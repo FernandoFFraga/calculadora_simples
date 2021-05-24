@@ -1,0 +1,111 @@
+/*Import da fonte utilizada*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+/*Configs gerais*/
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+
+	background: #06beb6; 
+	background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+/*Configuração header*/
+
+.title{
+	font-family: 'Montserrat', arial, sans-serif;
+}
+
+.title h1{
+	color: #fff;
+	font-weight: 700;
+	text-shadow: 1px 1px 4px rgba(0,0,0,.2);
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.title span{
+	color: #232323;
+	font-weight: 500;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+/*Configuração container*/
+
+.container{
+	margin-top: 30px;
+	width: 300px;
+	background-color: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 10px 10px 0px rgb(0 0 0 / 10%)
+}
+
+#display{
+	background-color: #4F4F4F;
+}
+
+#display input{
+	width: calc(100% - 30px);
+	border: none;
+	background-color: transparent;
+	margin: 0;
+	text-align: right;
+	font-size: 1.8rem;
+	padding: 25px 15px 20px;
+	color: #fff;
+}
+
+#display input:focus{
+	outline: 0;
+}
+
+#keyboard table{
+	width: 100%;
+	border-collapse: collapse;
+	
+}
+
+#keyboard table td{
+	border: solid 1px rgba(0,0,0,.1);
+	padding: 15px 5px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	font-family: 'Montserrat', arial, sans-serif;
+	text-align: center;
+	text-shadow: 1px 1px 3px rgba(0,0,0,.2);
+	cursor: pointer;
+}
+
+#keyboard table td:last-child{
+	background: #ff6600;
+	padding: 15px 2px;
+	color: #fff;
+	border-right: 0;
+}
+
+#keyboard table tr:last-child td{
+	border-bottom: 0;
+}
+
+#keyboard table td:hover{
+	background-color: #F1F1F1;
+}
+
+#keyboard table td:last-child:hover{
+	background-color: #E76006;
+}
