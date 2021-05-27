@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel='stylesheet' href='css/default.css'>
+	<title>Calculadora Simples</title>
+</head>
+<body id="main">
+	<header class='title'>
+		<h1>Calculadora Simples (Eval)</h1>
+		<span>Por Fernando Fraga</span>
+	</header>
+
+	<section class="container">
+		<header id="display">
+			<span id="operation"></span>
+			<input type="text"  readonly value="0">
+		</header>
+		<section id="keyboard">
+			<table>
+				<tr>
+					<td colspan="3" onclick="clearEntry();">CE</td>
+					<td colspan="3" onclick="clearAll();">C</td>
+					<td onclick="typeExp('/');">/</td>
+				</tr>
+				<tr>
+					<td colspan="2" onclick="typeExp('7');">7</td>
+					<td colspan="2" onclick="typeExp('8');">8</td>
+					<td colspan="2" onclick="typeExp('9');">9</td>
+					<td onclick="typeExp('*');">*</td>
+				</tr>
+				<tr>
+					<td colspan="2" onclick="typeExp('4');">4</td>
+					<td colspan="2" onclick="typeExp('5');">5</td>
+					<td colspan="2" onclick="typeExp('6');">6</td>
+					<td onclick="typeExp('-');">-</td>
+				</tr>
+				<tr>
+					<td colspan="2" onclick="typeExp('1');">1</td>
+					<td colspan="2" onclick="typeExp('2');">2</td>
+					<td colspan="2" onclick="typeExp('3');">3</td>
+					<td onclick="typeExp('+');">+</td>
+				</tr>
+				<tr>
+					<td colspan="4" onclick="typeExp('0');">0</td>
+					<td colspan="2" onclick="typeExp('.');">.</td>
+					<td onclick="calc();">=</td>
+				</tr>
+			</table>
+		</section>
+	</section>
+
+<!-- Import do Script Eval() -->
+<script src="js/app_eval.js"></script>
+</body>
+</html>

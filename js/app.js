@@ -16,10 +16,10 @@ $("#keyboard td").click(function(){ //Captura eventos de cliques nas tags <td>
 
 	} else {
 		switch(value) {
-			case 'C':
+			case 'CE':
 				clear();
 				break;
-			case 'AC':
+			case 'C':
 				allClear();
 				break;
 			case '=':
@@ -68,7 +68,7 @@ function keyOperation(value) {
 				app.acc = parseFloat(app.acc) - parseFloat(app.display);
 				app.display = app.acc;
 				break;
-			case 'X':
+			case '*':
 				app.acc = parseFloat(app.acc) * parseFloat(app.display);
 				app.display = app.acc;
 				break;
@@ -93,7 +93,7 @@ function calculate(){
 				app.acc = parseFloat(app.acc) - parseFloat(app.display);
 				app.display = app.acc;
 				break;
-			case 'X':
+			case '*':
 				app.acc = parseFloat(app.acc) * parseFloat(app.display);
 				app.display = app.acc;
 				break;
